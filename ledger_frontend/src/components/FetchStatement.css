@@ -1,0 +1,124 @@
+/* Container for fetching statement details: Sets max width, padding, background, and shadow for better UI */
+.fetch-statement-container { 
+    max-width: 400px;
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Header container for center-aligned headings or logos, with margin for spacing */
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input field styling: Full width, padding, and consistent look for inputs and datepicker inputs */
+input, .react-datepicker-wrapper input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+}
+
+/* Date input container: Lays out date fields side by side with spacing */
+.date-container {
+    display: flex;
+    justify-content: space-between; /* Aligns date fields evenly */
+    gap: 10px; /* Adds space between date fields */
+}
+
+/* Wrapper for datepicker to ensure full width of the component */
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+/* Styling for the datepicker input field */
+.react-datepicker__input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Consent checkbox container: Aligns checkbox and label horizontally and centers them */
+.consent-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Checkbox input styling: Adjusts spacing and scales the size of the checkbox */
+.consent-container input[type="checkbox"] {
+    margin-right: 8px;
+    margin-left: 0px;
+    transform: scale(1.2); /* Increases the size of the checkbox */
+}
+
+/* Label for the consent checkbox with minimal margin */
+.consent-container label {
+    margin: 2px;
+}
+
+/* General button styling: Full width, padding, green background, and rounded corners */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Disabled button styling: Grey background to indicate non-interaction */
+button:disabled {
+    background-color: #c0c0c0;
+}
+
+/* Styles for home and logout buttons: Full width, padding, blue background for home, and consistent appearance */
+.home-button, .logout-button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Additional logout button styling: Transparent background with green text */
+.logout-button {
+    background-color: transparent;
+    color: #28a745;
+    text-align: center;
+}
+
+/* Hover effect for logout button: Changes background to green and text to white */
+.logout-button:hover {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none; /* Removes underline on hover */
+}
+
+/* Error message styling: Red color and adjusted font size for error feedback */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Success message styling: Green color and adjusted font size for success feedback */
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: -10px;
+}

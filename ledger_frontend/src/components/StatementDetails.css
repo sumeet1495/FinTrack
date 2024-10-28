@@ -1,0 +1,125 @@
+/* Container for the whole page: Sets max width, padding, background, and shadow for the main statement details section */
+.statement-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Logo styling: Centers the logo and adjusts size with bottom margin */
+.statement-details-logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Header styling for the Statement Details section: Adds margin and sets font size and color */
+.statement-details-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Table container: Makes the table responsive with horizontal scrolling for smaller screens */
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* General table styling: Sets full width, collapses borders, and adjusts font size */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 9px; /* Further reduced font size */
+}
+
+/* Table header and cell styling: Adds borders, padding, and text alignment */
+.transaction-table th,
+.transaction-table td {
+    border: 1px solid #ddd;
+    padding: 5px; /* Reduced padding */
+    text-align: center;
+    word-wrap: break-word; /* Ensures long words wrap */
+}
+
+/* Table header background styling: Sets background color and bold font for headers */
+.transaction-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Table row hover effect: Adds a background color when hovering over rows */
+.transaction-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Total balance row styling: Adds bold font, background color, and adjusted font size */
+.total-balance-row td {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    font-size: 9px;
+    color: black;
+}
+
+/* Balance amount styling: Removes custom font weight and ensures consistency with other table content */
+.balance-amount {
+    font-weight: normal;
+    color: black;
+    font-size: 9px;
+    text-align: center;
+}
+
+/* Button styling specific to StatementDetails: Sets width, padding, background color, and rounded corners */
+.statement-details-container button {
+    width: 150px;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Button hover effect: Changes background color to a darker shade of blue */
+.statement-details-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Logout button styling: Adjusts background color, size, and padding specific to logout functionality */
+.statement-details-container .logout-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logout button hover effect: Changes background color to a darker green when hovered */
+.statement-details-container .logout-button:hover {
+    background-color: #218838;
+    color: white;
+}
+
+/* Styling to add space between the logout icon and the text */
+.logout-button .fa-sign-out {
+    margin-right: 8px;
+}
+
+/* Button group styling: Aligns buttons in a flexible row and wraps them if needed */
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

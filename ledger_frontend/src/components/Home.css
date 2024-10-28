@@ -1,0 +1,105 @@
+/* Overall layout for the Home page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3fff3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container for content alignment */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 40px 50px; /* Reduced padding on the top and bottom */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo styling */
+.home-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Title and subtitle styling */
+h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Action buttons styling */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    width: 300px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.action-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Logout button styling */
+.logout-button-bottom {
+    background-color: transparent;
+    color: #28a745;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button-bottom:hover {
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Icon next to logout text */
+.logout-button-bottom svg {
+    margin-right: 5px;
+}
+
+/* Ensure the button grid is responsive */
+@media (max-width: 480px) {
+    .button-container {
+        grid-template-columns: 1fr;
+    }
+}

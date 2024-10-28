@@ -1,0 +1,27 @@
+/* General body styling: Sets the font, removes margins and padding, and applies a soft background color */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f0f6; /* Background color that complements the logo */
+}
+
+/* Main App container: Centers content and adds a logo as a background image with adjustments for positioning and size */
+.App {
+  text-align: center;
+  background-image: url('../public/fintrack-logo.png'); /* Add logo to the background */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px; /* Adjust as needed */
+  padding-top: 100px; /* Adjust to match your design */
+}
+
+/* General button styling: Defines font size, padding, margin, rounded corners, and removes border */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer; /* Indicates that the button is clickable */
+}

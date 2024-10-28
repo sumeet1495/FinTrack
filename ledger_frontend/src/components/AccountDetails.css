@@ -1,0 +1,110 @@
+/* Styles the container for the account details section, including padding, background, and shadow */
+.account-details-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Styles the header section with spacing below */
+.header-container {
+    margin-bottom: 20px;
+}
+
+/* Styles the logo image */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Styles the account details section, including headings and paragraphs */
+.account-details {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.account-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.account-details h4 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.account-details p {
+    margin: 8px 0;
+}
+
+/* General styles for buttons, including width, padding, and background color */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Styles for disabled buttons */
+button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+/* Styles the back button with blue background and hover effect */
+.back-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles the home button, similar to the back button */
+.home-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles the logout button with transparent background and green text */
+.logout-button {
+    background: transparent;
+    color: #28a745;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+.logout-button .fa-sign-out {
+    margin-right: 5px;
+}

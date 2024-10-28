@@ -1,0 +1,118 @@
+/* Container for the view report page: Sets max width, padding, background, and shadow for the main section */
+.view-report-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Logo styling: Centers the logo with adjusted margins to fit content */
+.view-report-logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px auto; /* Reduced margin to fit everything */
+}
+
+/* Header styling for the view report section: Adds margin, sets font size and color */
+.view-report-container h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Chart container: Displays charts side by side with spacing and aligned vertically */
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px; /* Reduced margin */
+    align-items: center;
+}
+
+/* Individual chart item: Sets flexible width for side-by-side layout and limits max width */
+.chart-item {
+    flex: 1;
+    margin: 0 10px;
+    max-width: 50%;
+}
+
+/* Canvas styling for charts: Ensures full width and sets a fixed height */
+canvas {
+    width: 100%;
+    height: 400px;
+}
+
+/* Date picker container: Centers date inputs and adds space between them */
+.date-picker-container {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Date input field: Small size with padding, border, and rounded corners */
+.date-input-small {
+    padding: 6px;
+    width: 120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Totals table: Sets smaller font size and spacing for a compact view */
+.totals-table {
+    margin-top: 15px;
+    font-size: 12px; /* Reduced font size */
+    margin-bottom: 10px;
+}
+
+/* Table inside totals section: Collapses borders and sets smaller font size */
+.totals-table table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 12px; /* Smaller font size */
+}
+
+/* Table header and cell styling: Adds padding and borders for cells */
+.totals-table th, .totals-table td {
+    padding: 8px 15px; /* Reduced padding */
+    border: 1px solid #ddd;
+}
+
+/* Button group container: Aligns buttons in the center and wraps them if needed */
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* General button styling for view report page: Sets width, padding, background color, and rounded corners */
+.view-report-container button {
+    width: 140px; /* Adjusted width */
+    padding: 10px;
+    margin: 8px 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hover effect for buttons: Changes background color to a darker shade of blue */
+.view-report-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Logout button styling within button group: Sets green background and overrides other styles */
+.button-group .logout-button {
+    background-color: #28a745 !important; /* Green background with higher priority */
+    color: white !important;
+}
+
+/* Hover effect for logout button: Changes background to darker green with higher priority */
+.button-group .logout-button:hover {
+    background-color: #218838 !important; /* Green hover background */
+    color: white !important;
+}

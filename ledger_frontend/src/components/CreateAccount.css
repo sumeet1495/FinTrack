@@ -1,0 +1,135 @@
+/* General body styles for the page, applying a flex layout to center content vertically and horizontally */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3fff3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+/* Container for the account creation form, applying padding, background color, and shadow */
+.create-account-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Header section styles, adding bottom margin for spacing */
+.header-container {
+    margin-bottom: 20px;
+}
+  
+/* Logo image styles, ensuring proper width and bottom margin for spacing */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Styles for input fields and select dropdowns to ensure uniform appearance */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding is accounted for within the element's width */
+}
+  
+/* General button styles with padding, background color, and rounded corners */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+/* Styles for disabled buttons, changing background color and cursor appearance */
+button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+/* Container for consent section, aligning checkbox and label inline */
+.consent-container {
+    display: inline-flex; /* Aligns checkbox and label in a single row */
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    white-space: nowrap; /* Prevents wrapping of content */
+}
+
+/* Styles for checkbox inside consent container */
+.consent-container input[type="checkbox"] {
+    margin-right: 8px; /* Adds space between checkbox and label */
+    margin-left: 0px; /* Proper alignment for the checkbox */
+    transform: scale(1.2); /* Optionally scales the checkbox for better visibility */
+}
+
+/* Styles for label inside consent container */
+.consent-container label {
+    margin: 2px; /* Minimal spacing */
+}
+
+/* General response message styles for feedback after form submission */
+.response-message {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Success message styling with green text */
+.success-message {
+    color: green;
+}
+
+/* Error message styling with red text */
+.error-message {
+    color: red;
+}
+
+/* General button styles for home and logout buttons, ensuring consistent width and padding */
+.home-button, .logout-button {
+    width: 100%; /* Full width for consistency */
+    padding: 12px; /* Consistent padding for both buttons */
+    background-color: #007bff; /* Default background for home button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Center text inside the buttons */
+}
+
+/* Styles for logout button, setting it transparent by default */
+.logout-button {
+    background-color: transparent; /* No background color */
+    color: #28a745; /* Green text color for logout */
+    margin-top: 20px; /* Adds space above the logout button */
+    text-align: center; /* Centers text inside the button */
+}
+
+/* Hover effect for the home button, darkening the background */
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hover effect for the logout button, changing background and text color */
+.logout-button:hover {
+    background-color: #28a745; /* Green background on hover */
+    color: white; /* White text on hover */
+    text-decoration: none; /* Removes underline on hover */
+}
+
+/* Icon styling inside the logout button, ensuring spacing between icon and text */
+.logout-button .fa-sign-out {
+    margin-right: 5px;
+}

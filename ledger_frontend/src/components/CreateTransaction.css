@@ -1,0 +1,128 @@
+/* Styles for the body: Ensures the entire page is centered vertically and horizontally with flexbox layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3fff3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for creating a transaction: Sets a background color, padding, and shadow to visually highlight the form */
+.create-transaction-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Styles for the header section: Used for titles or logos, with spacing at the bottom */
+.header-container {
+    margin-bottom: 20px;
+}
+
+/* Logo styles: Defines a fixed width for logos with spacing at the bottom */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Input and select fields: Ensures full width, padding, and consistent appearance for form elements */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* General button styles: Sets full width, padding, green background, and rounded corners */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Disabled button styles: Changes background color and cursor to indicate disabled state */
+button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+/* Consent container: Aligns checkbox and label side by side with a specific font size */
+.consent-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Checkbox inside consent container: Adds space between checkbox and label, and increases the checkbox size */
+.consent-container input[type="checkbox"] {
+    margin-right: 8px;
+    margin-left: 0px;
+    transform: scale(1.2);
+}
+
+/* Label inside consent container: Adds a minimal margin */
+.consent-container label {
+    margin: 2px;
+}
+
+/* Response message styles: Defines margin and font size for displaying success or error messages */
+.response-message {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Success message styles: Displays success messages in green */
+.success-message {
+    color: green;
+}
+
+/* Error message styles: Displays error messages in red */
+.error-message {
+    color: red;
+}
+
+/* Home and Logout button styles: Ensures full width, padding, and consistent appearance for navigation buttons */
+.home-button, .logout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Additional logout button styles: Transparent background with green text */
+.logout-button {
+    background-color: transparent;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* Hover effect for home button: Changes background color to a darker blue on hover */
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hover effect for logout button: Changes background color to green and text to white on hover */
+.logout-button:hover {
+    background-color: #28a745;
+    color: white;
+}

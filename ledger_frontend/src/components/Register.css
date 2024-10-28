@@ -1,0 +1,129 @@
+/* General body styling: Removes default margins and padding, centers content, and applies full height */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3fff3; /* Very light green background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Container for centering content and aligning text in the center */
+.container {
+  text-align: center;
+}
+
+/* Logo container: Centers logo both horizontally and vertically with margin at the bottom */
+.logo-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the FinTrack logo: Sets width and maintains aspect ratio */
+.fintrack-logo {
+  width: 120px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Register container: Defines width, padding, background, shadow, and rounded corners for the form container */
+.register-container {
+  width: 320px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Light background for form container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+  text-align: center;
+  margin: 0 auto; /* Center container */
+}
+
+/* Styling for headings with bottom margin for spacing */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Input fields: Full width, padding, margin, and border styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* General button styling: Full width, green background, padding, and rounded corners */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Button hover effect: Changes background color to a darker shade of green */
+button:hover {
+  background-color: #218838;
+}
+
+/* Disabled button styling: Greyed-out cursor and non-interactive state */
+button:disabled {
+  cursor: not-allowed; 
+}
+
+/* Link styling: Blue text without underline */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Link hover effect: Adds underline when hovered */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Response message styling: Defines margin and font size */
+.response-message {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Success message styling: Green text for success feedback */
+.response-message.success {
+  color: green; 
+}
+
+/* Error message styling: Red text for error feedback */
+.response-message.error {
+  color: red; 
+}
+
+/* Password container: Positions elements relative and aligns them for icon placement */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Input field within the password container: Adds padding to the right for the eye icon */
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* Space for the eye icon */
+}
+
+/* Styling for the eye icon to toggle password visibility: Positions it inside the container */
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px; /* Make the icon bigger */
+  color: #333;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+}
